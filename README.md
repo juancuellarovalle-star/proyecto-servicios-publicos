@@ -1,4 +1,3 @@
-
 **JUAN PABLO CUELLAR OVALLE**
 
 # CONTEXTO PROBLEMÁTICA
@@ -11,33 +10,40 @@ del hogar. Todo esto afecta la economía familiar y también la convivencia.
 # ÁRBOL DE PROBLEMAS
 ```mermaid
 graph TD
-    A[Problemas en el pago de servicios públicos] 
-    A --> B[Retrasos en los pagos]
-    A --> C[Desorganización familiar]
-    A --> D[Consecuencias económicas]
+    %% Nodo central
+    P[Problemas en el pago de servicios públicos]
 
-    B --> B1[Recargos e intereses]
-    B --> B2[Cortes de servicios]
+    %% Consecuencias (arriba)
+    P --> C1[Recargos e intereses]
+    P --> C2[Cortes de servicios]
+    P --> C3[Problemas de convivencia]
+    P --> C4[Afectación económica familiar]
 
-    C --> C1[Falta de comunicación]
-    C --> C2[Confusión con fechas de vencimiento]
-
-    D --> D1[Afecta el presupuesto familiar]
-    D --> D2[Discusión entre miembros de la familia]
-```
+    %% Causas (abajo)
+    P --> CA1[Falta de comunicación]
+    P --> CA2[Olvido de fechas de vencimiento]
+    P --> CA3[Desorganización en los recibos]
+    P --> CA4[Responsabilidad poco clara entre miembros de la familia]
 
 # PROMPT
-La problemática se puede resolver a través de herramientas digitales que ayuden a las 
-familias a organizar y centralizar los pagos de sus servicios públicos. Estas soluciones 
-buscan facilitar la comunicación, recordar los vencimientos y evitar recargos innecesarios.
+El texto que se utilizó para generar las posibles soluciones fue el siguiente:
 
-Las tres soluciones planteadas son:
-1. Una aplicación móvil que envíe recordatorios automáticos de los pagos pendientes.  
-2. Un calendario inteligente compartido entre los miembros de la familia con notificaciones.  
-3. Una aplicación que centralice todos los servicios en un solo lugar para realizar los pagos fácilmente.  
+*"ChatGPT, necesito que me ayudes a solucionar la problemática que tienen muchas familias
+con el pago de los servicios públicos. Normalmente se atrasan, se confunden con los recibos,
+o se olvidan de las fechas de vencimiento, lo que trae problemas económicos y de convivencia.
+Por favor dame diferentes ideas de soluciones tecnológicas que puedan ayudar a organizar y
+facilitar estos pagos."*
+
+# SOLUCIONES TECNOLÓGICAS
+1. **Aplicación móvil con recordatorios automáticos**  
+   Una app sencilla que avise con notificaciones cuando se acerque la fecha de pago.  
+
+2. **Calendario compartido para la familia**  
+   Un calendario digital donde todos puedan ver las fechas de vencimiento y recibir alertas.  
+
+3. **Aplicación que centraliza los pagos**  
+   Una plataforma que reúna todos los servicios públicos en un solo lugar, para pagarlos sin confusión.  
 
 # IDEA SELECCIONADA
-Decidí quedarme con la aplicación que centraliza los pagos de los servicios públicos en un 
-solo lugar, porque es la que más se ajusta a la problemática. Es más práctica que las otras 
-dos ideas, ayuda a evitar confusiones y permite tener todo organizado en un mismo espacio, 
-lo cual facilita que la familia pueda cumplir con los pagos a tiempo sin complicarse tanto.
+Decidí quedarme con la **aplicación que centraliza los pagos de los servicios públicos en un solo lugar**, porque es la que más se ajusta a la problemática.  
+Es más práctica que las otras dos ideas, ayuda a evitar confusiones y permite tener todo organizado en un mismo espacio, lo cual facilita que la familia pueda cumplir con los pagos a tiempo sin complicarse tanto.
