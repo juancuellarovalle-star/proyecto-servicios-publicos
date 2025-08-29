@@ -1,118 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CentralizaPagos - Tu asistente de servicios públicos</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f5f7fa;
-        }
-        header {
-            background: #0077cc;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            margin-top: 10px;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .hero {
-            text-align: center;
-            padding: 60px 20px;
-            background: #e9f4ff;
-        }
-        .hero h1 {
-            color: #0077cc;
-            font-size: 2.5em;
-        }
-        .hero p {
-            font-size: 1.2em;
-            color: #444;
-        }
-        .btn {
-            display: inline-block;
-            margin-top: 20px;
-            background: #0077cc;
-            color: white;
-            padding: 12px 20px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .btn:hover {
-            background: #005fa3;
-        }
-        .features {
-            display: flex;
-            justify-content: space-around;
-            padding: 40px 20px;
-            background: white;
-        }
-        .feature {
-            max-width: 300px;
-            text-align: center;
-        }
-        .feature h3 {
-            color: #0077cc;
-        }
-        footer {
-            text-align: center;
-            padding: 15px;
-            background: #0077cc;
-            color: white;
-            margin-top: 30px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PagoFácil - Organiza tus servicios</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-800">
 
-    <header>
-        <h1>CentralizaPagos</h1>
-        <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Servicios</a>
-            <a href="#">Registro</a>
-            <a href="#">Contacto</a>
-        </nav>
-    </header>
+  <!-- Navbar -->
+  <nav class="bg-white shadow-sm fixed w-full top-0 z-10">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-indigo-600">PagoFácil</h1>
+      <ul class="hidden md:flex gap-6">
+        <li><a href="#" class="hover:text-indigo-600 font-medium">Inicio</a></li>
+        <li><a href="#features" class="hover:text-indigo-600 font-medium">Funciones</a></li>
+        <li><a href="#contacto" class="hover:text-indigo-600 font-medium">Contacto</a></li>
+      </ul>
+      <a href="dashboard.html" class="hidden md:block bg-indigo-600 text-white px-5 py-2 rounded-lg shadow hover:bg-indigo-700 transition">
+        Empieza ya
+      </a>
+    </div>
+  </nav>
 
-    <section class="hero">
-        <h1>Organiza y paga tus servicios públicos en un solo lugar</h1>
-        <p>Evita confusiones, retrasos y problemas económicos con nuestra plataforma simple y práctica.</p>
-        <a href="#" class="btn">Empieza Ahora</a>
-    </section>
+  <!-- Hero -->
+  <section class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-32 mt-16">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 px-6 items-center">
+      <div>
+        <h2 class="text-5xl font-extrabold leading-tight mb-6">Nunca más olvides pagar tus servicios</h2>
+        <p class="text-lg mb-8">Centraliza recibos, recibe recordatorios automáticos y mantén tus finanzas familiares organizadas con una sola app.</p>
+        <a href="dashboard.html" class="bg-white text-indigo-600 px-8 py-3 rounded-lg font-semibold shadow-lg hover:bg-gray-200 transition">
+          Empieza ahora
+        </a>
+      </div>
+      <div class="flex justify-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/891/891462.png" alt="Servicios" class="w-80 drop-shadow-lg">
+      </div>
+    </div>
+  </section>
 
-    <section class="features">
-        <div class="feature">
-            <h3>Recordatorios automáticos</h3>
-            <p>Recibe notificaciones antes de la fecha de vencimiento de cada servicio.</p>
+  <!-- Features -->
+  <section id="features" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold mb-12 text-gray-800">¿Por qué usar PagoFácil?</h3>
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition">
+          <i data-lucide="bell" class="mx-auto mb-4 text-indigo-600" style="width:40px;height:40px;"></i>
+          <h4 class="text-xl font-semibold mb-2">Recordatorios automáticos</h4>
+          <p class="text-gray-600">Notificaciones antes del vencimiento para que nunca pagues con recargo.</p>
         </div>
-        <div class="feature">
-            <h3>Todos los servicios en un lugar</h3>
-            <p>Paga agua, luz, gas e internet desde la misma plataforma sin complicaciones.</p>
+        <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition">
+          <i data-lucide="folder" class="mx-auto mb-4 text-indigo-600" style="width:40px;height:40px;"></i>
+          <h4 class="text-xl font-semibold mb-2">Un solo lugar</h4>
+          <p class="text-gray-600">Centraliza luz, agua, gas e internet en una app clara y ordenada.</p>
         </div>
-        <div class="feature">
-            <h3>Fácil de usar</h3>
-            <p>Diseñada para toda la familia, sin necesidad de conocimientos técnicos.</p>
+        <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition">
+          <i data-lucide="bar-chart-3" class="mx-auto mb-4 text-indigo-600" style="width:40px;height:40px;"></i>
+          <h4 class="text-xl font-semibold mb-2">Historial de pagos</h4>
+          <p class="text-gray-600">Consulta en segundos tus pagos pasados y controla tus gastos.</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <p>© 2025 CentralizaPagos - Todos los derechos reservados</p>
-    </footer>
+  <!-- Footer -->
+  <footer id="contacto" class="bg-gray-100 py-10 text-center text-gray-600">
+    <p>© 2025 PagoFácil - Todos los derechos reservados</p>
+    <p class="mt-2">📧 contacto@pagofacil.com</p>
+  </footer>
 
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 </html>
